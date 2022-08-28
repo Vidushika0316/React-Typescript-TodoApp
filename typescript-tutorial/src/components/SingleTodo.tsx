@@ -32,7 +32,7 @@ const SingleTodo = ({ index, todo, todos, setTodos }: Props) => {
     e.preventDefault();
 
     setTodos(
-      todos.map((todo) => (todo.id == id ? { ...todo, todo: editTodo } : todo))
+      todos.map((todo) => (todo.id === id ? { ...todo, todo: editTodo } : todo))
     );
 
     setEdit(false);
